@@ -11,7 +11,7 @@ const ItemSliderContent = () => {
         <p className='text-md px-2 sm:mx-7 text-gray-700 font-extrabold text-2xl'>Breaking Head Line</p>
       
       &nbsp;
-      <div className='flex flex-col sm:flex sm:flex-row md:flex-row md:space-x-4 px-2'>
+      <div className='flex flex-col  sm:flex-row md:flex-row md:space-x-4 px-2'>
       <TopNewCarousel/>
       {/* <BreakingHeadLine/> */}
       <BreakingHeadLineNews/>

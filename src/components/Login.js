@@ -16,7 +16,7 @@ const Login = () => {
     <div className=" flex flex-col sm:flex sm:flex-row bg-customgreen">
       {/* Login Form Section */}
       
-      <div className="mt-32 mx-auto w-[full] sm:w-[50%]  sm:px-5 px-4">
+      <div className=" mt-4 sm:mt-32 mx-auto w-[full] sm:w-[50%]  sm:px-5 px-4">
       <h1 className="text-3xl font-black text-center mb-4 text-gray-800">Welcome Back !</h1>
        
       <div className=" border shadow-lg w-full px-12 py-12 bg-white rounded-2xl mb-10 ">

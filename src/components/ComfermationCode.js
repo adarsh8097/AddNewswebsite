@@ -34,7 +34,7 @@ const ComfermationCode = () => {
   return (
     <div className="flex flex-col sm:flex sm:flex-row bg-customgreen h-screen">
       {/* Left Side: Form Section */}
-      <div className="h-auto mt-32 mx-auto w-full sm:w-[50%] sm:px-5 px-4">
+      <div className="h-auto mt-4 sm:mt-32 mx-auto w-full sm:w-[50%] sm:px-5 px-4">
         <div className="border shadow-lg w-full px-12 py-12 bg-white rounded-2xl mb-10">
           <div className="flex justify-center items-center ">
             <IoMdLock className="text-4xl" />

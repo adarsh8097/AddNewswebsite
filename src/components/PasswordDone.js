@@ -14,7 +14,7 @@ const PasswordDone = () => {
   return (
     <div className="flex flex-col sm:flex-row h-screen bg-customgreen">
       {/* Left Side: Success Section */}
-      <div className="mt-32 mx-auto w-full sm:w-[50%] px-4 sm:px-5">
+      <div className="mt-4 sm:mt-32 mx-auto w-full sm:w-[50%] px-4 sm:px-5">
         <div className="border shadow-lg w-full px-12 py-12 bg-white rounded-2xl mb-10 text-center">
           <div className="flex justify-center items-center border border-gray-300 rounded-full w-16 h-16 mx-auto mb-6">
             <FcCheckmark className="text-4xl" />
