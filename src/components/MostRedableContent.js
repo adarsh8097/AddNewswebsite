@@ -41,7 +41,7 @@ const MostReadableContent = () => {
   ];
 
   return (
-    <div className=' w-[100%]'>
+    <div className='w-full'>
        <h2 className="font-black text-lg py-2 my-2 mx-6 text-gray-800">Most Read</h2>
         
         <div className="flex items-center -mt-1 w-[120px] mx-6"> {/* Adjust -mt-1 as needed */}
@@ -50,7 +50,7 @@ const MostReadableContent = () => {
       </div>
         
 
-    <div className="grid grid-cols-1 w-[100%] sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4 md:w-[720px] lg:w-[999px] xl:w-[720px]">
+    <div className="grid grid-cols-1 w-[100%] sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 p-4 md:w-full lg:w-full xl:w-[720px] w-full">
       {data.map(item => (
         <div key={item.id} className="bg-white  rounded-lg overflow-hidden">
           {/* <img src={item.imageUrl} alt={item.title} className="w-full h-48 object-cover" /> */}

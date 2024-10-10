@@ -148,7 +148,7 @@ const PostDetailsContent = () => {
       </div>
 
       {/* Follow Button & Social Media Links */}
-      <div className="flex justify-between">
+      <div className="flex justify-between flex-col py-2 sm:flex-row">
         <div className="flex items-center space-x-2">
           <button className="bg-blue-500 py-1 px-4 rounded text-white hover:bg-blue-600">+ Follow</button>
           <div className="flex space-x-3 text-xl text-gray-600">
@@ -160,9 +160,9 @@ const PostDetailsContent = () => {
         </div>
 
         {/* Views Section */}
-        <div className="flex items-center -mt-2 text-gray-600">
+        <div className="flex items-center -mt-2 text-gray-600 py-2">
           <IoEyeOutline className="text-xl mr-2" />
-          <span>1k Views</span>
+          <span className="text-base">1k Views</span>
         </div>
       </div>
           <div className=" -mx-3 my-3   md:px-8 w-[100%]">
@@ -170,8 +170,8 @@ const PostDetailsContent = () => {
   <div className="bg-white rounded-lg overflow-hidden ">
     
     {/* Card Header */}
-    <div className="-px-6 py-4 flex justify-between">
-      <h2 className="text-2xl font-black text-gray-800">Breaking Head Line</h2>
+    <div className="-px-6 py-4 flex justify-between flex-col sm:flex-row">
+      <h2 className="text-xl font-black text-gray-800 sm:text-2xl">Breaking Head Line</h2>
       <h6 className="text-gray-600 text-sm">10 min ago</h6>
     </div>
     
@@ -227,62 +227,31 @@ const PostDetailsContent = () => {
       </p>
     </div>
   </div>
-  {/* <div className=' bg-green-100 lg:w-[100%] xl:w[100%] py-7 px-6 mx-0 md:w-[100%]'>
-        <div className='flex justify-between mb-4'>
+ 
+  <div className=' bg-green-100   sm:py-5 sm:px-6 sm:w-[100%]  md:w-full xl:w-[100%]  w-[100%] p-2'>
+        <div className='flex justify-between  mb-4'>
         <p className=' text-sm font-bold text-gray-500'>Related News</p>
         <p className='font-bold text-gray-800'>
           <Link href="#" className='flex space-x-4'>View All <IoIosArrowForward className='mt-1 font-bold'/> </Link></p>
         </div>
-       <div className='flex'>
-      <div className='grid w-96'>
+       <div className='grid grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full'>
+      <div className='flex'>
             <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-            <p className='w-auto py-1 w-24 h-12 text-md text-gray-600 mb-4'>“Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
+            <p className='w-auto py-1  text-md text-gray-600 text-justify'>“Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
       </div>
-      <div className='grid w-96'>
+      <div className='flex'>
           <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-            <p className='w-auto py-1 w-24 h-12 text-md text-gray-600 mb-4'>“Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
+            <p className='w-auto py-1  text-md text-gray-600 text-justify px-2'>“Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
      </div>
-      <div className='flex flex-col w-96 md:hidden lg:block xl:block 2xl:block lg:flex lg:flex-row'>
-      <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-            <p className='w-auto py-1 w-24 h-12 text-md text-gray-600 mb-4'>“Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
-       </div>
-       </div>
-     </div> */}
-     <div className='bg-green-100 lg:w-[100%] xl:w-[100%] py-7 px-6 mx-0 md:w-[100%]'>
-  <div className='flex justify-between mb-4'>
-    <p className='text-sm font-bold text-gray-500'>Related News</p>
-    <p className='font-bold text-gray-800'>
-      <Link href="#" className='flex space-x-4'>View All <IoIosArrowForward className='mt-1 font-bold'/> </Link>
-    </p>
-  </div>
-
-  <div className='flex'>
-    <div className='relative w-96'>
-      {/* <video className="absolute top-0 left-0 w-full h-full object-cover opacity-50" src="video-source.mp4" muted autoPlay loop /> */}
-      
-      <div className='grid relative'>
-        <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-        <p className='w-24 py-1 w-auto  text-md text-gray-600 '>Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
-      </div>
-    </div>
-
-    <div className='relative w-96'>
-      <video className="absolute top-0 left-0 w-full h-full object-cover opacity-50" src="video-source.mp4" muted autoPlay loop />
-      <div className='grid relative'>
-        <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-        <p className='w-auto py-1 w-24 h-12 text-md text-gray-600 '>Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
-      </div>
-    </div>
-
-    <div className='relative w-96 hidden md:hidden lg:block xl:block 2xl:block lg:flex lg:flex-row'>
-      <video className="absolute top-0 left-0 w-full h-full object-cover opacity-50" src="video-source.mp4" muted autoPlay loop />
-      <div className='grid relative'>
-        <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
-        <p className='w-auto py-1 w-24 h-12 text-md text-gray-600 mb-4'>Elections 2024: Live updates Trump set to face off in first debate tomorrow</p>
-      </div>
-    </div>
-  </div>
+     <div className='flex '>
+  <img className='w-24 h-24 py-2 mx-2' src="../Assets/images/politics6.jpg" alt='news-img'/>
+  <p className='w-auto py-1  text-md text-gray-600 text-justify'>
+    “Elections 2024: Live updates Trump set to face off in first debate tomorrow
+  </p>
 </div>
+
+       </div>
+     </div>
 
 </div>
 <div className="p-4 w-[100%]">
@@ -290,7 +259,7 @@ const PostDetailsContent = () => {
     <div className="grid grid-rows-1 gap-6">
       
       {/* Card 1 */}
-      <div className="bg-white rounded-lg shadow-md px-4 flex flex-row space-x-8">
+      <div className="bg-white rounded-lg shadow-md px-4 flex flex-col sm:space-x-8 sm:flex-row">
         <div className="mb-4 relative">
           <img 
             src="https://cdn.dribbble.com/userupload/15061191/file/original-10dce9c18b784f7c3ff00daddf57ad44.png?resize=400x0" 
@@ -316,7 +285,7 @@ const PostDetailsContent = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="bg-white rounded-lg shadow-md px-4 flex flex-row space-x-8">
+      <div className="bg-white rounded-lg shadow-md px-4 flex  flex-col sm:space-x-8 sm:flex-row">
         <div className="mb-4 relative">
           <img 
             src="https://i.pinimg.com/736x/9c/71/da/9c71da63657845ea5a41bde48dff2c3f.jpg" 
@@ -351,12 +320,12 @@ const PostDetailsContent = () => {
   </div>
 
   {/* Article Cards Below the Post Details */}
-  <div className="p-4 w-[70%]">
+  <div className="p-4 w-[100%] sm:w-[70%]">
     <p className="text-xl font-bold mb-4">Product</p>
     <div className="grid grid-rows-1 gap-6">
       
       {/* Card 1 */}
-      <div className="bg-white rounded-lg shadow-md px-4 flex flex-row space-x-8">
+      <div className="bg-white rounded-lg shadow-md px-4 flex flex-col sm:space-x-8 sm:flex-row">
         <div className="mb-4 relative">
           <img 
             src="https://cdn.dribbble.com/userupload/15061191/file/original-10dce9c18b784f7c3ff00daddf57ad44.png?resize=400x0" 

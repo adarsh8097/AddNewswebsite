@@ -28,13 +28,13 @@ const VideoContent = () => {
         <div className="flex-1 border-b-4 border-gray-800"></div> {/* Solid Border */}
         <div className="flex-1 border-b-4 border-dotted border-gray-400"></div> {/* Dotted Border */}
       </div>
-    <div className="grid grid-rows-1 grid-cols-1 sm:grid-rows-2 md:grid-rows-2 gap-4 p-4 w-[280px]">
+    <div className="grid grid-rows-1 grid-cols-1 sm:grid-rows-2 md:grid-rows-2 gap-4 p-4 w-full ">
       {videoData.map((video) => (
         <div key={video.id} className="bg-white rounded-lg shadow-md overflow-hidden">
           <img 
             src={video.imageUrl} 
             alt={video.title} 
-            className="w-full h-48 object-cover"
+            className="w-full h-72 xl:h-48 object-cover"
           />
           {/* <h3 className="text-center font-bold text-lg p-2">{video.title}</h3> */}
         </div>

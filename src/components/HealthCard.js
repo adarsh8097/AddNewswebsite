@@ -27,7 +27,7 @@ const HealthPage = () => {
           {/* <div >
            <img src={data.imageUrl} alt={data.title} className="w-[450px] h-72 object-cover"/>
           </div> */}
-          <div className="sm:h-72 2xl:h-[80%] bg-gray-200 relative w-[100%]">
+          <div className=" 2xl:h-[80%] bg-gray-200 relative w-[100%]">
             <img src={data.imageUrl} alt={data.title} className="w-full lg:w-full lg:h-full object-cover md:w-full md:h-full" />
             
             {/* Overlay text */}
